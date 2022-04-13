@@ -2,7 +2,7 @@ module "network" {
   source  = "app.terraform.io/bm_mi_lab/network/google"
   version = "3.4.0"
   # insert required variables here
-  network_name = "bm_net"
+  network_name = "bm-net"
   project_id = "var.project"
   subnets = [
   {
