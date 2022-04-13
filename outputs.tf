@@ -8,5 +8,5 @@ output "catapp_ip" {
 }
 
 output "catapp_all" {
-  value = "http://${google_compute_instance.hashicat.network_interface.0}"
+  value = google_compute_instance.hashicat.network_interface.0
 }
