@@ -6,3 +6,7 @@ output "catapp_url" {
 output "catapp_ip" {
   value = "http://${google_compute_instance.hashicat.network_interface.0.network_ip}"
 }
+
+output "catapp_all" {
+  value = "http://${google_compute_instance.hashicat.network_interface.0}"
+}
